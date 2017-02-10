@@ -1,3 +1,5 @@
+[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
+
 # Serverless Boilerplate
 This is a basic bare bones template for a python serverless function
 
