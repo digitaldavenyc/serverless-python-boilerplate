@@ -6,7 +6,7 @@ This is a basic bare bones template for a python serverless function
 ## Basics
 ### Dealing with package dependencies
 There are a lot of ways to make dependecies work, but the gist of it is just simple Python: Put your dependencies in a folder and add that folder
-to your import path. In the case of this example, that folder is `vendored` (which is added to the path in the root `__init__.py` file and the
+to your import path. In the case of this example, that folder is `vendored` (which is added to the path by manipulating the AWS Lambda PYTHONPATH) The
 process for populating it is to keep all your package dependencies in a `requirements.txt` file (which you can generate by running `pip freeze`
 if you haven't been keeping it up to date, and then running `pip install -t vendored/ -r requirements.txt`
 
