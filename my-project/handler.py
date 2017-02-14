@@ -1,4 +1,5 @@
 import json
+import uuid
 
 def hello(event, context):
     body = {
@@ -8,6 +9,7 @@ def hello(event, context):
 
     response = {
         "statusCode": 200,
+	"uuid": str(uuid.uuid4()),
         "body": json.dumps(body)
     }
 

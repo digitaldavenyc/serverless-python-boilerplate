@@ -20,6 +20,8 @@ service: my-project
 provider:
   name: aws
   runtime: python2.7
+  environment: # setting the AWS lambda PYTHONPATH to include our vendored packages
+    PYTHONPATH: "/var/runtime:/var/task/vendored"
 
 # you can overwrite defaults here
 #  stage: dev
